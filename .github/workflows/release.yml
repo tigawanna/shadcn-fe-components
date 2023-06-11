@@ -22,8 +22,8 @@ jobs:
 
     - name: Init Git User
       run: 
-        git config --global user.name "tigawanna"
-        git config --global user.email "denniskinuthiaw@gmail.com"
+          git config --global user.name "tigawanna"
+          git config --global user.email "denniskinuthiaw@gmail.com"
       
     - name: Setup npmrc
       run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
