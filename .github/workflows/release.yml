@@ -20,13 +20,10 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Init Git User
-      run: 
-          git config --global user.name "tigawanna"
-          git config --global user.email "denniskinuthiaw@gmail.com"
+  
       
     - name: Setup npmrc
-      run: npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc 
 
 
     - name: Build and Release UI
