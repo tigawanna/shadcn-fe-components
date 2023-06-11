@@ -39,11 +39,11 @@ export async function buildAllStages() {
 
   //  await buildStage({ clean: false, entry: chunks[chunks.length - 1] });
 
-   for await (const [index, chunk] of chunks.entries()) {
-    console.log('🚀 ~ chnk === ', chunk);
-      await buildStage({ clean:index===0, entry: chunk });
+//    for await (const [index, chunk] of chunks.entries()) {
+//     console.log('🚀 ~ chnk === ', chunk);
+//       await buildStage({ clean:index===0, entry: chunk });
 
-  }
+//   }
         await buildStage({ clean:true, entry: root_file });
 }
     //    await buildStage({ clean: false, entry: ['src/components/tooltip/index.ts'] });
