@@ -12,6 +12,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["vite.config.ts","./scripts"],
+  "include": ["vite.config.ts","./scripts","./stash"],
   "exclude": ["src/shadcn/ui"]
 }

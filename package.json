@@ -1,8 +1,15 @@
 {
-  "name": "shadcn-fe-components",
-  "version": "0.0.3",
+  "name": "shadcn-fe-ui",
+  "version": "0.0.0",
   "type": "module",
   "description": "shadcn/ui instalabble components",
+  "author": {
+    "name": "tigawanna"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigawanna/shadcn-fe-components"
+  },
   "engines": {
     "node": ">=17.x",
     "npm": ">=8.x <9"
@@ -169,8 +176,8 @@
     "build:css": "tailwindcss -m -i ./src/tailwind.css -o ./src/styles.css",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
-    "release": "changeset version",
-    "ci:publish": "pnpm publish --no-git-checks --access public --tag next"
+    "release": "release-it",
+    "ci:publish": "npm publish --no-git-checks --access public --tag next"
   },
   "keywords": [
     "shadcn/ui",
@@ -181,7 +188,6 @@
     "fan-edition",
     "shadcn-fe-components"
   ],
-  "author": "tigawanna",
   "license": "ISC",
   "devDependencies": {
     "@ladle/react": "^2.14.0",
@@ -201,6 +207,7 @@
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "release-it": "^15.11.0",
     "tailwindcss": "^3.3.2",
     "tsup": "^6.7.0",
     "typescript": "^5.1.3",

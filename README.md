@@ -42,3 +42,6 @@ you can then import
 ```tsx
 import { Button } from "shadcn-fe-components"
 ```
+
+## helpful references
+[relase-it + github actions setup video](https://www.youtube.com/watch?v=7pBcuT7j_A0)
